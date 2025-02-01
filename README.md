@@ -114,7 +114,48 @@ curl -X POST -F "file=@/path/to/image.jpg" http://127.0.0.1:5000/upload_file
 - **🚀 Scalability**: Supporting increasing user requests and uploads.
 - **🌐 Performance Optimization**: Reducing query latency and improving response times.
 
+
 ---
+
+# 🌐 System Architecture and Flow
+
+This section outlines the system architecture and interaction flow within the application, which integrates **Flask API**, **MongoDB**, **DynamoDB**, and **Amazon S3** to handle recipe management, image uploading, and metadata processing. Below are key diagrams that demonstrate the processes involved in adding recipes, managing images, and retrieving data.
+
+---
+
+## 1. 🧑‍🍳 User Interaction Flow
+
+### **Figure 1: User Interaction Flow** ✨
+
+This flowchart illustrates the sequence of user actions within the application. It highlights the interaction between the **User** 🧑‍🍳, **Flask API** 🔧, **MongoDB** 🗃️, **DynamoDB** 💾, and **Amazon S3** ☁️ for tasks such as adding or viewing recipes 🍲, uploading images 📸, and interacting with recipe metadata (e.g., views 👁️ and likes ❤️). The flow provides a clear visualization of how the user interfaces with the system.
+
+
+---
+
+## 2. 🏗️ System Architecture Overview
+
+### **Figure 2: System Architecture for Data Storage and Retrieval** 🔄
+
+This diagram represents the overall architecture of the system. It demonstrates the relationship between **MongoDB** 🗃️, **DynamoDB** 💾, and **Amazon S3** ☁️ for storing and retrieving data, as well as the role of **Flask API** 🔧 in facilitating user interactions with these storage services. The diagram showcases how each component contributes to the functioning of the application.
+
+
+---
+
+## 3. 🍴 Recipe Addition and Image Upload Process
+
+### **Figure 3: Sequence Diagram for Adding a Recipe** 📈
+
+This sequence diagram details the process involved in adding a new recipe to the system. It includes the steps of uploading images 📸 to **Amazon S3** ☁️, saving the recipe information (e.g., ingredients 🥘, steps 📝) in **MongoDB** 🗃️, storing metadata (such as views 👁️ and likes ❤️) in **DynamoDB** 💾, and confirming the addition ✅ to the user. This diagram visually captures the flow of data as the user adds new recipes.
+
+
+---
+
+## 📚 Conclusion
+
+The diagrams provided above offer a comprehensive view of how the system handles user interactions, stores and retrieves data, and manages the recipe addition process. They serve as a crucial reference for understanding the internal workflow and architectural design of the application.
+
+---
+
 
 ## 🏆 Contributors
 This project was developed by Hajra Nisar, Bushra Shahbaz, and Fatima Najam, who managed different aspects of the system, including backend development, cloud infrastructure, and frontend design. To facilitate local execution, LocalStack was used, which provides a fully functional local AWS cloud environment. This allowed us to test and integrate AWS services like S3 and DynamoDB without deploying to the actual cloud.
