@@ -119,7 +119,7 @@ curl -X POST -F "file=@/path/to/image.jpg" http://127.0.0.1:5000/upload_file
 ## 🏆 Contributors
 This project was developed by Hajra Nisar, Bushra Shahbaz, and Fatima Najam, who managed different aspects of the system, including backend development, cloud infrastructure, and frontend design. To facilitate local execution, LocalStack was used, which provides a fully functional local AWS cloud environment. This allowed us to test and integrate AWS services like S3 and DynamoDB without deploying to the actual cloud.
 
-Hajra Nisar - [GitHub](https://github.com/hajrangit)
+Hajra Nisar - [GitHub](https://github.com/hajragit)
 
 Bushra Shahbaz - [GitHub](https://github.com/Bushra-Butt-17)
 
