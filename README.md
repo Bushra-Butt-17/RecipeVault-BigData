@@ -9,6 +9,7 @@ The **BigData Recipe Management System** is a scalable, cloud-integrated platfor
 - **🖼️ Upload Images**: Store recipe images securely on **Amazon S3**.
 - **✅ Interaction Tracking**: Track views and likes using **MongoDB**.
 - **👁️ Metadata Management**: Store and retrieve metadata such as views, likes, and tags using **DynamoDB**.
+![image](https://github.com/user-attachments/assets/1c21b2bf-3fed-490e-8234-20defafa4662)
 
 ---
 
@@ -120,6 +121,7 @@ curl -X POST -F "file=@/path/to/image.jpg" http://127.0.0.1:5000/upload_file
 # 🌐 System Architecture and Flow
 
 This section outlines the system architecture and interaction flow within the application, which integrates **Flask API**, **MongoDB**, **DynamoDB**, and **Amazon S3** to handle recipe management, image uploading, and metadata processing. Below are key diagrams that demonstrate the processes involved in adding recipes, managing images, and retrieving data.
+![image](https://github.com/user-attachments/assets/fbbb087d-e4b3-42b4-b569-c9c2baaf3821)
 
 ---
 
@@ -129,6 +131,7 @@ This section outlines the system architecture and interaction flow within the ap
 
 This flowchart illustrates the sequence of user actions within the application. It highlights the interaction between the **User** 🧑‍🍳, **Flask API** 🔧, **MongoDB** 🗃️, **DynamoDB** 💾, and **Amazon S3** ☁️ for tasks such as adding or viewing recipes 🍲, uploading images 📸, and interacting with recipe metadata (e.g., views 👁️ and likes ❤️). The flow provides a clear visualization of how the user interfaces with the system.
 
+![image](https://github.com/user-attachments/assets/617867d4-bcdd-435c-a742-ccdf02051196)
 
 ---
 
@@ -138,6 +141,7 @@ This flowchart illustrates the sequence of user actions within the application. 
 
 This diagram represents the overall architecture of the system. It demonstrates the relationship between **MongoDB** 🗃️, **DynamoDB** 💾, and **Amazon S3** ☁️ for storing and retrieving data, as well as the role of **Flask API** 🔧 in facilitating user interactions with these storage services. The diagram showcases how each component contributes to the functioning of the application.
 
+![image](https://github.com/user-attachments/assets/c765483b-8ed4-4c2f-9a4d-7aefb2b356af)
 
 ---
 
@@ -146,6 +150,7 @@ This diagram represents the overall architecture of the system. It demonstrates 
 ### **Figure 3: Sequence Diagram for Adding a Recipe** 📈
 
 This sequence diagram details the process involved in adding a new recipe to the system. It includes the steps of uploading images 📸 to **Amazon S3** ☁️, saving the recipe information (e.g., ingredients 🥘, steps 📝) in **MongoDB** 🗃️, storing metadata (such as views 👁️ and likes ❤️) in **DynamoDB** 💾, and confirming the addition ✅ to the user. This diagram visually captures the flow of data as the user adds new recipes.
+![image](https://github.com/user-attachments/assets/446c6200-58ab-452e-b299-4e29ca4a2633)
 
 
 ---
